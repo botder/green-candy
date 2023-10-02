@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\libspeexdsp\fftwrap.c" />
+    <ClCompile Include="..\libspeexdsp\filterbank.c" />
+    <ClCompile Include="..\libspeexdsp\jitter.c" />
+    <ClCompile Include="..\libspeexdsp\kiss_fft.c" />
+    <ClCompile Include="..\libspeexdsp\kiss_fftr.c" />
+    <ClCompile Include="..\libspeexdsp\mdf.c" />
+    <ClCompile Include="..\libspeexdsp\preprocess.c" />
+    <ClCompile Include="..\libspeexdsp\resample.c" />
+    <ClCompile Include="..\libspeexdsp\scal.c" />
+    <ClCompile Include="..\libspeexdsp\smallft.c" />
+    <ClCompile Include="..\libspeexdsp\buffer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libspeexdsp\fftwrap.h" />
+    <ClInclude Include="..\libspeexdsp\filterbank.h" />
+    <ClInclude Include="..\libspeexdsp\fixed_arm4.h" />
+    <ClInclude Include="..\libspeexdsp\fixed_arm5e.h" />
+    <ClInclude Include="..\libspeexdsp\fixed_bfin.h" />
+    <ClInclude Include="..\libspeexdsp\fixed_debug.h" />
+    <ClInclude Include="..\libspeexdsp\fixed_generic.h" />
+    <ClInclude Include="..\libspeexdsp\kiss_fft.h" />
+    <ClInclude Include="..\libspeexdsp\kiss_fftr.h" />
+    <ClInclude Include="..\libspeexdsp\math_approx.h" />
+    <ClInclude Include="..\libspeexdsp\misc_bfin.h" />
+    <ClInclude Include="..\libspeexdsp\os_support.h" />
+    <ClInclude Include="..\libspeexdsp\pseudofloat.h" />
+    <ClInclude Include="..\libspeexdsp\resample_neon.h" />
+    <ClInclude Include="..\libspeexdsp\resample_sse.h" />
+    <ClInclude Include="..\libspeexdsp\smallft.h" />
+    <ClInclude Include="..\libspeexdsp\stack_alloc.h" />
+    <ClInclude Include="..\libspeexdsp\vorbis_psy.h" />
+    <ClInclude Include="..\libspeexdsp\_kiss_fft_guts.h" />
+    <ClInclude Include="..\libspeexdsp\arch.h" />
+    <ClInclude Include="..\libspeexdsp\bfin.h" />
+    <ClInclude Include="..\include\config.h" />
+  </ItemGroup>
+</Project>

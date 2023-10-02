@@ -1,0 +1,3 @@
+OPTIONS.FILESYS_LINUX_PIC = true;
+// Options for the Linux modules compilation.
+//OPTIONS.FILESYS_MULTI_THREADING = false;

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\CGUITexture_Impl.cpp" />
+    <ClCompile Include="..\CGUIWindow_Impl.cpp" />
+    <ClCompile Include="..\Main.cpp" />
+    <ClCompile Include="..\StdInc.cpp" />
+    <ClCompile Include="..\CGUI_Impl.cpp" />
+    <ClCompile Include="..\CGUIButton_Impl.cpp" />
+    <ClCompile Include="..\CGUICheckBox_Impl.cpp" />
+    <ClCompile Include="..\CGUIComboBox_Impl.cpp" />
+    <ClCompile Include="..\CGUIEdit_Impl.cpp" />
+    <ClCompile Include="..\CGUIElement_Impl.cpp" />
+    <ClCompile Include="..\CGUIFont_Impl.cpp" />
+    <ClCompile Include="..\CGUIGridList_Impl.cpp" />
+    <ClCompile Include="..\CGUILabel_Impl.cpp" />
+    <ClCompile Include="..\CGUIListItem_Impl.cpp" />
+    <ClCompile Include="..\CGUIMemo_Impl.cpp" />
+    <ClCompile Include="..\CGUIMessageBox_Impl.cpp" />
+    <ClCompile Include="..\CGUIProgressBar_Impl.cpp" />
+    <ClCompile Include="..\CGUIRadioButton_Impl.cpp" />
+    <ClCompile Include="..\CGUIScrollBar_Impl.cpp" />
+    <ClCompile Include="..\CGUIScrollPane_Impl.cpp" />
+    <ClCompile Include="..\CGUIStaticImage_Impl.cpp" />
+    <ClCompile Include="..\CGUITab_Impl.cpp" />
+    <ClCompile Include="..\CGUITabList.cpp" />
+    <ClCompile Include="..\CGUITabPanel_Impl.cpp" />
+    <ClCompile Include="..\..\..\vendor\DXERR\dxerr.cpp">
+      <Filter>dxerr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgtrace.cpp">
+      <Filter>debugsdk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgheap.cpp">
+      <Filter>debugsdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CGUITexture_Impl.h" />
+    <ClInclude Include="..\CGUIWindow_Impl.h" />
+    <ClInclude Include="..\StdInc.h" />
+    <ClInclude Include="..\CGUI_Impl.h" />
+    <ClInclude Include="..\CGUIButton_Impl.h" />
+    <ClInclude Include="..\CGUICheckBox_Impl.h" />
+    <ClInclude Include="..\CGUIComboBox_Impl.h" />
+    <ClInclude Include="..\CGUIEdit_Impl.h" />
+    <ClInclude Include="..\CGUIElement_Impl.h" />
+    <ClInclude Include="..\CGUIElement_Inc.h" />
+    <ClInclude Include="..\CGUIFont_Impl.h" />
+    <ClInclude Include="..\CGUIGridList_Impl.h" />
+    <ClInclude Include="..\CGUILabel_Impl.h" />
+    <ClInclude Include="..\CGUIListItem_Impl.h" />
+    <ClInclude Include="..\CGUIMemo_Impl.h" />
+    <ClInclude Include="..\CGUIMessageBox_Impl.h" />
+    <ClInclude Include="..\CGUIProgressBar_Impl.h" />
+    <ClInclude Include="..\CGUIRadioButton_Impl.h" />
+    <ClInclude Include="..\CGUIScrollBar_Impl.h" />
+    <ClInclude Include="..\CGUIScrollPane_Impl.h" />
+    <ClInclude Include="..\CGUIStaticImage_Impl.h" />
+    <ClInclude Include="..\CGUITab_Impl.h" />
+    <ClInclude Include="..\CGUITabList.h" />
+    <ClInclude Include="..\CGUITabListItem.h" />
+    <ClInclude Include="..\CGUITabPanel_Impl.h" />
+    <ClInclude Include="..\..\..\vendor\DXERR\dxerr.h">
+      <Filter>dxerr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\debugsdk_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.h">
+      <Filter>debugsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.vendor.hwbrk.hxx">
+      <Filter>debugsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgheap.h">
+      <Filter>debugsdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dxerr">
+      <UniqueIdentifier>{d9e9776f-316d-4d25-b273-55a01b29db1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{38b7ff88-dd78-451a-89cd-9f4f38a89f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debugsdk">
+      <UniqueIdentifier>{93ee1a20-ebf3-4af9-be1a-41893fd466f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

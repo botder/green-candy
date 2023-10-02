@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\CLimitsSA.cpp" />
+    <ClCompile Include="..\CMultiplayerSA.cpp" />
+    <ClCompile Include="..\COffsets.cpp" />
+    <ClCompile Include="..\CPopulationSA.cpp" />
+    <ClCompile Include="..\CRemoteDataSA.cpp" />
+    <ClCompile Include="..\multiplayer_hooksystem.cpp" />
+    <ClCompile Include="..\multiplayer_keysync.cpp" />
+    <ClCompile Include="..\multiplayer_shotsync.cpp" />
+    <ClCompile Include="..\multiplayersa_init.cpp" />
+    <ClCompile Include="..\StdInc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CLimitsSA.h" />
+    <ClInclude Include="..\CMultiplayerSA.h" />
+    <ClInclude Include="..\COffsets.h" />
+    <ClInclude Include="..\Common.h" />
+    <ClInclude Include="..\CPopulationSA.h" />
+    <ClInclude Include="..\CRemoteDataSA.h" />
+    <ClInclude Include="..\multiplayer_hooksystem.h" />
+    <ClInclude Include="..\multiplayer_keysync.h" />
+    <ClInclude Include="..\multiplayer_shotsync.h" />
+    <ClInclude Include="..\multiplayersa_init.h" />
+    <ClInclude Include="..\StdInc.h" />
+  </ItemGroup>
+</Project>

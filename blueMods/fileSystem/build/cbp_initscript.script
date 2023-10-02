@@ -1,0 +1,13 @@
+function SetBuildOptions(cbase)
+{
+    OPTIONS <- {
+        LINUX_MTASERVERPATH = ""
+    };
+    
+    if (IO.FileExists(_T("fileSystem.cbp.localcfg")))
+    {
+        Require(_T("fileSystem.cbp.localcfg"));
+    }
+    
+    cbase.AddLinkLib(_T(OPTIONS.LINUX_MTASERVERPATH + "/x64/deathmatch.so"));
+}

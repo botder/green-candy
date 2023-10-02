@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\CXMLArray.cpp" />
+    <ClCompile Include="..\CXMLAttributeImpl.cpp" />
+    <ClCompile Include="..\CXMLAttributesImpl.cpp" />
+    <ClCompile Include="..\CXMLFileImpl.cpp" />
+    <ClCompile Include="..\CXMLImpl.cpp" />
+    <ClCompile Include="..\CXMLNodeImpl.cpp" />
+    <ClCompile Include="..\StdInc.cpp" />
+    <ClCompile Include="..\XML.cpp" />
+    <ClCompile Include="..\..\..\vendor\tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CXMLArray.h" />
+    <ClInclude Include="..\CXMLAttributeImpl.h" />
+    <ClInclude Include="..\CXMLAttributesImpl.h" />
+    <ClInclude Include="..\CXMLFileImpl.h" />
+    <ClInclude Include="..\CXMLImpl.h" />
+    <ClInclude Include="..\CXMLNodeImpl.h" />
+    <ClInclude Include="..\StdInc.h" />
+    <ClInclude Include="..\..\..\vendor\tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{d7da4aa9-d3ef-4255-8a2b-65039b9f9c24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\CAdditionalVertexStreamManager.cpp" />
+    <ClCompile Include="..\CChat.cpp" />
+    <ClCompile Include="..\CClientTime.cpp" />
+    <ClCompile Include="..\CClientVariables.cpp" />
+    <ClCompile Include="..\CCommandFuncs.cpp" />
+    <ClCompile Include="..\CCommands.cpp" />
+    <ClCompile Include="..\CCommunity.cpp" />
+    <ClCompile Include="..\CCommunityLogin.cpp" />
+    <ClCompile Include="..\CCommunityRegistration.cpp" />
+    <ClCompile Include="..\CCompressorJobQueue.cpp" />
+    <ClCompile Include="..\CConnectManager.cpp" />
+    <ClCompile Include="..\CConsole.cpp" />
+    <ClCompile Include="..\CConsoleHistory.cpp" />
+    <ClCompile Include="..\CCore.cpp" />
+    <ClCompile Include="..\CCredits.cpp" />
+    <ClCompile Include="..\CDebugView.cpp" />
+    <ClCompile Include="..\CDirect3DData.cpp" />
+    <ClCompile Include="..\CDirect3DEvents9.cpp" />
+    <ClCompile Include="..\CDirect3DHook.cpp" />
+    <ClCompile Include="..\CDirect3DHook9.cpp" />
+    <ClCompile Include="..\CDirect3DHookManager.cpp" />
+    <ClCompile Include="..\CDirectInputEvents8.cpp" />
+    <ClCompile Include="..\CDirectInputHook8.cpp" />
+    <ClCompile Include="..\CDirectInputHookManager.cpp" />
+    <ClCompile Include="..\CExceptionInformation_Impl.cpp" />
+    <ClCompile Include="..\CFavouritesAddByIP.cpp" />
+    <ClCompile Include="..\CFileFormatJpeg.cpp" />
+    <ClCompile Include="..\CFileFormatPng.cpp" />
+    <ClCompile Include="..\CFileSystemHook.cpp" />
+    <ClCompile Include="..\CFileSystemMemoryHandle.cpp" />
+    <ClCompile Include="..\CFileSystemMemoryHandleManager.cpp" />
+    <ClCompile Include="..\CGraphics.cpp" />
+    <ClCompile Include="..\CGUI.cpp" />
+    <ClCompile Include="..\CJoystickManager.cpp" />
+    <ClCompile Include="..\CKeyBinds.cpp" />
+    <ClCompile Include="..\CLanguageLocale.cpp" />
+    <ClCompile Include="..\CLine3DBatcher.cpp" />
+    <ClCompile Include="..\CLogger.cpp" />
+    <ClCompile Include="..\CMainMenu.cpp" />
+    <ClCompile Include="..\CMainMenuScene.cpp" />
+    <ClCompile Include="..\CMaterialLine3DBatcher.cpp" />
+    <ClCompile Include="..\CMessageLoopHook.cpp" />
+    <ClCompile Include="..\CModManager.cpp" />
+    <ClCompile Include="..\CNewsBrowser.cpp" />
+    <ClCompile Include="..\Core.cpp" />
+    <ClCompile Include="..\CPEHookUtils.cpp" />
+    <ClCompile Include="..\CPixelsManager.cpp" />
+    <ClCompile Include="..\CPixelsManager_VolumeTexture.cpp" />
+    <ClCompile Include="..\CProxyDirect3D8.cpp" />
+    <ClCompile Include="..\CProxyDirect3D9.cpp" />
+    <ClCompile Include="..\CProxyDirect3DDevice9.cpp" />
+    <ClCompile Include="..\CProxyDirect3DIndexBuffer.cpp" />
+    <ClCompile Include="..\CProxyDirect3DTexture.cpp" />
+    <ClCompile Include="..\CProxyDirect3DVertexBuffer.cpp" />
+    <ClCompile Include="..\CProxyDirect3DVertexDeclaration.cpp" />
+    <ClCompile Include="..\CProxyDirectInput8.cpp" />
+    <ClCompile Include="..\CProxyDirectInputDevice8.cpp" />
+    <ClCompile Include="..\CQuestionBox.cpp" />
+    <ClCompile Include="..\CQuickConnect.cpp" />
+    <ClCompile Include="..\CrashHandler.cpp" />
+    <ClCompile Include="..\CRenderItem.cpp" />
+    <ClCompile Include="..\CRenderItem.DxFont.cpp" />
+    <ClCompile Include="..\CRenderItem.EffectCloner.cpp" />
+    <ClCompile Include="..\CRenderItem.EffectTemplate.cpp" />
+    <ClCompile Include="..\CRenderItem.EffectWrap.cpp" />
+    <ClCompile Include="..\CRenderItem.FileTexture.cpp" />
+    <ClCompile Include="..\CRenderItem.GuiFont.cpp" />
+    <ClCompile Include="..\CRenderItem.RenderTarget.cpp" />
+    <ClCompile Include="..\CRenderItem.ScreenSource.cpp" />
+    <ClCompile Include="..\CRenderItem.Shader.cpp" />
+    <ClCompile Include="..\CRenderItem.ShaderInstance.cpp" />
+    <ClCompile Include="..\CRenderItemManager.cpp" />
+    <ClCompile Include="..\CRenderItemManager.TextureReplace.cpp" />
+    <ClCompile Include="..\CScreenGrabber.cpp" />
+    <ClCompile Include="..\CScreenShot.cpp" />
+    <ClCompile Include="..\CServer.cpp" />
+    <ClCompile Include="..\CServerBrowser.cpp" />
+    <ClCompile Include="..\CServerBrowser.MasterServerManager.cpp" />
+    <ClCompile Include="..\CServerBrowser.RemoteMasterServer.cpp" />
+    <ClCompile Include="..\CServerCache.cpp" />
+    <ClCompile Include="..\CServerInfo.cpp" />
+    <ClCompile Include="..\CServerList.cpp" />
+    <ClCompile Include="..\CSetCursorPosHook.cpp" />
+    <ClCompile Include="..\CSettings.cpp" />
+    <ClCompile Include="..\CTileBatcher.cpp" />
+    <ClCompile Include="..\CVersionUpdater.cpp" />
+    <ClCompile Include="..\CVertexStreamBoundingBoxManager.cpp" />
+    <ClCompile Include="..\CVideoModeManager.cpp" />
+    <ClCompile Include="..\CXfireQuery.cpp" />
+    <ClCompile Include="..\StdInc.cpp" />
+    <ClCompile Include="..\xfire.cpp" />
+    <ClCompile Include="..\tracking\CHTTPResponse.cpp">
+      <Filter>tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tracking\CTCPClientSocketImpl.cpp">
+      <Filter>tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tracking\CTCPManager.cpp">
+      <Filter>tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tracking\CHTTPClient.cpp">
+      <Filter>tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shared\core\CDynamicLibrary.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgtrace.cpp">
+      <Filter>debugsdk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgheap.cpp">
+      <Filter>debugsdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CAdditionalVertexStreamManager.h" />
+    <ClInclude Include="..\CChat.h" />
+    <ClInclude Include="..\CClientTime.h" />
+    <ClInclude Include="..\CClientVariables.h" />
+    <ClInclude Include="..\CCommandFuncs.h" />
+    <ClInclude Include="..\CCommands.h" />
+    <ClInclude Include="..\CCommunity.h" />
+    <ClInclude Include="..\CCommunityLogin.h" />
+    <ClInclude Include="..\CCommunityRegistration.h" />
+    <ClInclude Include="..\CCompressorJobQueue.h" />
+    <ClInclude Include="..\CConnectManager.h" />
+    <ClInclude Include="..\CConsole.h" />
+    <ClInclude Include="..\CConsoleHistory.h" />
+    <ClInclude Include="..\CCore.h" />
+    <ClInclude Include="..\CCredits.h" />
+    <ClInclude Include="..\CDebugView.h" />
+    <ClInclude Include="..\CDirect3DData.h" />
+    <ClInclude Include="..\CDirect3DEvents9.h" />
+    <ClInclude Include="..\CDirect3DHook.h" />
+    <ClInclude Include="..\CDirect3DHook9.h" />
+    <ClInclude Include="..\CDirect3DHookManager.h" />
+    <ClInclude Include="..\CDirectInputEvents8.h" />
+    <ClInclude Include="..\CDirectInputHook8.h" />
+    <ClInclude Include="..\CDirectInputHookManager.h" />
+    <ClInclude Include="..\CDirectXHook.h" />
+    <ClInclude Include="..\CExceptionInformation_Impl.h" />
+    <ClInclude Include="..\CFavouritesAddByIP.h" />
+    <ClInclude Include="..\CFileFormat.h" />
+    <ClInclude Include="..\CFileSystemHook.h" />
+    <ClInclude Include="..\CFileSystemMemoryHandle.h" />
+    <ClInclude Include="..\CFileSystemMemoryHandleManager.h" />
+    <ClInclude Include="..\CGraphics.h" />
+    <ClInclude Include="..\CGUI.h" />
+    <ClInclude Include="..\CJoystickManager.h" />
+    <ClInclude Include="..\CKeyBinds.h" />
+    <ClInclude Include="..\CLanguageLocale.h" />
+    <ClInclude Include="..\CLine3DBatcher.h" />
+    <ClInclude Include="..\CLinkedList.h" />
+    <ClInclude Include="..\CLogger.h" />
+    <ClInclude Include="..\CMainMenu.h" />
+    <ClInclude Include="..\CMainMenuScene.h" />
+    <ClInclude Include="..\CMaterialLine3DBatcher.h" />
+    <ClInclude Include="..\CMessageLoopHook.h" />
+    <ClInclude Include="..\CModManager.h" />
+    <ClInclude Include="..\CNewsBrowser.h" />
+    <ClInclude Include="..\Core.h" />
+    <ClInclude Include="..\CPEHookUtils.h" />
+    <ClInclude Include="..\CPixelsManager.h" />
+    <ClInclude Include="..\CProxyDirect3D9.h" />
+    <ClInclude Include="..\CProxyDirect3DDevice9.h" />
+    <ClInclude Include="..\CProxyDirect3DIndexBuffer.h" />
+    <ClInclude Include="..\CProxyDirect3DTexture.h" />
+    <ClInclude Include="..\CProxyDirect3DVertexBuffer.h" />
+    <ClInclude Include="..\CProxyDirect3DVertexDeclaration.h" />
+    <ClInclude Include="..\CProxyDirectInput8.h" />
+    <ClInclude Include="..\CProxyDirectInputDevice8.h" />
+    <ClInclude Include="..\CQuestionBox.h" />
+    <ClInclude Include="..\CQuickConnect.h" />
+    <ClInclude Include="..\CrashHandler.h" />
+    <ClInclude Include="..\CRenderItem.EffectCloner.h" />
+    <ClInclude Include="..\CRenderItemManager.h" />
+    <ClInclude Include="..\CScreenShot.h" />
+    <ClInclude Include="..\CServer.h" />
+    <ClInclude Include="..\CServerBrowser.h" />
+    <ClInclude Include="..\CServerBrowser.MasterServerManager.h" />
+    <ClInclude Include="..\CServerBrowser.RemoteMasterServer.h" />
+    <ClInclude Include="..\CServerCache.h" />
+    <ClInclude Include="..\CServerInfo.h" />
+    <ClInclude Include="..\CServerList.h" />
+    <ClInclude Include="..\CSetCursorPosHook.h" />
+    <ClInclude Include="..\CSettings.h" />
+    <ClInclude Include="..\CTileBatcher.h" />
+    <ClInclude Include="..\CVersionUpdater.h" />
+    <ClInclude Include="..\CVersionUpdater.Util.hpp" />
+    <ClInclude Include="..\CVertexStreamBoundingBoxManager.h" />
+    <ClInclude Include="..\CVideoModeManager.h" />
+    <ClInclude Include="..\CVideoUtils.h" />
+    <ClInclude Include="..\CXfireQuery.h" />
+    <ClInclude Include="..\StdInc.h" />
+    <ClInclude Include="..\UtilityMacros.h" />
+    <ClInclude Include="..\xfire.h" />
+    <ClInclude Include="..\tracking\CHTTPClient.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CHTTPResponse.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CTCPClientSocket.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CTCPClientSocketImpl.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CTCPManager.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CTCPServerSocket.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CTCPServerSocketImpl.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tracking\CTCPSocket.h">
+      <Filter>tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\core\CDynamicLibrary.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgheap.h">
+      <Filter>debugsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.h">
+      <Filter>debugsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.vendor.hwbrk.hxx">
+      <Filter>debugsdk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\debugsdk_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tracking">
+      <UniqueIdentifier>{9f7e7286-5f2e-4c18-bfb5-be77230980dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{3c64de87-029f-4f00-833b-33f0ec168bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debugsdk">
+      <UniqueIdentifier>{f916f48d-9ba0-49fe-ace7-64e5b5f47a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{f2c58f15-fa5a-48aa-94e5-32344ae0b7c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

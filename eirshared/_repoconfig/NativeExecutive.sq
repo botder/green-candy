@@ -1,0 +1,3 @@
+OPTIONS.NATEXEC_LINUX_PIC = true;
+// Enable these things if you compile MTA:BLUE modules (for Linux).
+//maybe todo.

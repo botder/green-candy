@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\afxres.h" />
+    <ClInclude Include="..\CInstallManager.h" />
+    <ClInclude Include="..\CSequencer.h" />
+    <ClInclude Include="..\Install.h" />
+    <ClInclude Include="..\Main.h" />
+    <ClInclude Include="..\resource.h" />
+    <ClInclude Include="..\StdInc.h" />
+    <ClInclude Include="..\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CInstallManager.cpp" />
+    <ClCompile Include="..\Install.cpp" />
+    <ClCompile Include="..\Main.cpp" />
+    <ClCompile Include="..\StdInc.cpp" />
+    <ClCompile Include="..\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\loader.rc" />
+  </ItemGroup>
+</Project>

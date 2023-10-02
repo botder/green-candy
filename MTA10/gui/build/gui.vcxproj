@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A72ED256-F039-45D1-B2AB-48B9FC674AA4}</ProjectGuid>
+    <RootNamespace>gui</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>cgui_d</TargetName>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(DXSDK_DIR)\Lib\x86\</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>cgui</TargetName>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(DXSDK_DIR)\Lib\x86\</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>cgui_d</TargetName>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(DXSDK_DIR)\Lib\x64\</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>cgui</TargetName>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(DXSDK_DIR)\Lib\x64\</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\eirrepo\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\..\..\vendor\cegui-0.4.0-custom\include\;..\..\..\vendor\D3D9\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/D MTA_DEBUG %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\vendor\cegui-0.4.0-custom\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CEGUIFalagard.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\eirrepo\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\..\..\vendor\cegui-0.4.0-custom\include\;..\..\..\vendor\D3D9\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/D MTA_DEBUG %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\vendor\cegui-0.4.0-custom\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CEGUIFalagard.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\eirrepo\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\..\..\vendor\cegui-0.4.0-custom\include\;..\..\..\vendor\D3D9\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\vendor\cegui-0.4.0-custom\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CEGUIFalagard.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\eirrepo\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\..\..\vendor\cegui-0.4.0-custom\include\;..\..\..\vendor\D3D9\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\vendor\cegui-0.4.0-custom\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CEGUIFalagard.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\gui\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgheap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgtrace.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\DXERR\dxerr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CGUIButton_Impl.cpp" />
+    <ClCompile Include="..\CGUICheckBox_Impl.cpp" />
+    <ClCompile Include="..\CGUIComboBox_Impl.cpp" />
+    <ClCompile Include="..\CGUIEdit_Impl.cpp" />
+    <ClCompile Include="..\CGUIElement_Impl.cpp" />
+    <ClCompile Include="..\CGUIFont_Impl.cpp" />
+    <ClCompile Include="..\CGUIGridList_Impl.cpp" />
+    <ClCompile Include="..\CGUILabel_Impl.cpp" />
+    <ClCompile Include="..\CGUIListItem_Impl.cpp" />
+    <ClCompile Include="..\CGUIMemo_Impl.cpp" />
+    <ClCompile Include="..\CGUIMessageBox_Impl.cpp" />
+    <ClCompile Include="..\CGUIProgressBar_Impl.cpp" />
+    <ClCompile Include="..\CGUIRadioButton_Impl.cpp" />
+    <ClCompile Include="..\CGUIScrollBar_Impl.cpp" />
+    <ClCompile Include="..\CGUIScrollPane_Impl.cpp" />
+    <ClCompile Include="..\CGUIStaticImage_Impl.cpp" />
+    <ClCompile Include="..\CGUITabList.cpp" />
+    <ClCompile Include="..\CGUITabPanel_Impl.cpp" />
+    <ClCompile Include="..\CGUITab_Impl.cpp" />
+    <ClCompile Include="..\CGUITexture_Impl.cpp" />
+    <ClCompile Include="..\CGUIWindow_Impl.cpp" />
+    <ClCompile Include="..\CGUI_Impl.cpp" />
+    <ClCompile Include="..\Main.cpp" />
+    <ClCompile Include="..\StdInc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgheap.h" />
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.h" />
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.vendor.hwbrk.hxx" />
+    <ClInclude Include="..\..\..\vendor\DXERR\dxerr.h" />
+    <ClInclude Include="..\CGUIButton_Impl.h" />
+    <ClInclude Include="..\CGUICheckBox_Impl.h" />
+    <ClInclude Include="..\CGUIComboBox_Impl.h" />
+    <ClInclude Include="..\CGUIEdit_Impl.h" />
+    <ClInclude Include="..\CGUIElement_Impl.h" />
+    <ClInclude Include="..\CGUIElement_Inc.h" />
+    <ClInclude Include="..\CGUIFont_Impl.h" />
+    <ClInclude Include="..\CGUIGridList_Impl.h" />
+    <ClInclude Include="..\CGUILabel_Impl.h" />
+    <ClInclude Include="..\CGUIListItem_Impl.h" />
+    <ClInclude Include="..\CGUIMemo_Impl.h" />
+    <ClInclude Include="..\CGUIMessageBox_Impl.h" />
+    <ClInclude Include="..\CGUIProgressBar_Impl.h" />
+    <ClInclude Include="..\CGUIRadioButton_Impl.h" />
+    <ClInclude Include="..\CGUIScrollBar_Impl.h" />
+    <ClInclude Include="..\CGUIScrollPane_Impl.h" />
+    <ClInclude Include="..\CGUIStaticImage_Impl.h" />
+    <ClInclude Include="..\CGUITabList.h" />
+    <ClInclude Include="..\CGUITabListItem.h" />
+    <ClInclude Include="..\CGUITabPanel_Impl.h" />
+    <ClInclude Include="..\CGUITab_Impl.h" />
+    <ClInclude Include="..\CGUITexture_Impl.h" />
+    <ClInclude Include="..\CGUIWindow_Impl.h" />
+    <ClInclude Include="..\CGUI_Impl.h" />
+    <ClInclude Include="..\config\debugsdk_config.h" />
+    <ClInclude Include="..\StdInc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

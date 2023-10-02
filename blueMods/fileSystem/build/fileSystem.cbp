@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="fileSystem" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Script file="cbp_initscript.script" />
+			<Target title="Debug">
+				<Option output="../bin/linux/Debug/fileSystem" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/linux/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/linux/Release/fileSystem" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../obj/linux/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fPIC" />
+			<Add option="-std=c++2a" />
+			<Add option="-Wno-invalid-offsetof" />
+			<Add directory="../" />
+			<Add directory="../../depend/lua/src" />
+			<Add directory="../../../eirshared/FileSystem/include" />
+			<Add directory="../../../eirshared/eirrepo" />
+			<Add directory="../../../eirshared/NativeExecutive/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../../../eirshared/FileSystem/lib/linux/$(TARGET_NAME)/libfs.a" />
+		</Linker>
+		<UnitsGlob directory=".." recursive="1" wildcard="*.cpp" />
+		<UnitsGlob directory=".." recursive="1" wildcard="*.h" />
+		<UnitsGlob directory=".." recursive="1" wildcard="*.hxx" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

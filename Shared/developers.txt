@@ -1,0 +1,22 @@
+MTA:Eir developers:
+	The_GTA / midnightStar (Martin Turski)
+
+MTA:BLUE developers:
+	Ed Lyons <eai@opencoding.net>
+	Christian Myhre Lundheim <>
+	Cecill Etheredge <ijsf@gmx.net> <ijsf@gmx-topmail.de>
+        Derek Abdine <>
+	ccw <chris@codewave.co.uk>
+	Jax <>
+	Alberto Alonso <rydencillo@gmail.com>
+	Sebas Lamers <sebasdevelopment@gmx.com>
+	Stanislav Bobrov <lil_Toady@hotmail.com>
+	Chris McArthur <>
+	Florian Busse <flobu@gmx.net>
+	Philip Farquharson <philip@philipfarquharson.co.uk>
+	Marcus Bauer <mabako@gmail.com>
+	arc_
+	Dan Chowdhury <danthetaliban@gmail.com>
+
+Kudos to:
+	S2 Games <http://savage.s2games.com> (historical entry)

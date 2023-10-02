@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Eir FileSystem for MTA:BLUE">
+		<Project filename="../../../eirshared/zlib/build/zlib.cbp" />
+		<Project filename="../../../eirshared/FileSystem/build/FileSystem.cbp">
+			<Depends filename="../../../eirshared/zlib/build/zlib.cbp" />
+		</Project>
+		<Project filename="fileSystem.cbp">
+			<Depends filename="../../../eirshared/FileSystem/build/FileSystem.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

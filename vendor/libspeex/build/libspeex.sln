@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libspeex", "libspeex.vcxproj", "{A7D31285-CAC5-4532-81BE-0081EDE07AE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159} = {15CBFEFF-7965-41F5-B4E2-21E8795C9159}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{595126D1-69D3-4E44-8845-CF5E97F1B987}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libogg_static", "..\..\ogg\win32\VS2015\libogg_static.vcxproj", "{15CBFEFF-7965-41F5-B4E2-21E8795C9159}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Debug|x64.ActiveCfg = Debug|x64
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Debug|x64.Build.0 = Debug|x64
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Debug|x86.Build.0 = Debug|Win32
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Release|x64.ActiveCfg = Release|x64
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Release|x64.Build.0 = Release|x64
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Release|x86.ActiveCfg = Release|Win32
+		{A7D31285-CAC5-4532-81BE-0081EDE07AE0}.Release|x86.Build.0 = Release|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x64.ActiveCfg = Debug|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x64.Build.0 = Debug|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x86.ActiveCfg = Debug|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x86.Build.0 = Debug|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x64.ActiveCfg = Release|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x64.Build.0 = Release|x64
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x86.ActiveCfg = Release|Win32
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15CBFEFF-7965-41F5-B4E2-21E8795C9159} = {595126D1-69D3-4E44-8845-CF5E97F1B987}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB00AFA0-9CD7-424E-B3C4-64ACC3CC9B98}</ProjectGuid>
+    <RootNamespace>game_sa</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>game_sa_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>game_sa</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>game_sa_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>game_sa</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\eirrepo\;..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\NativeExecutive\include\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4091</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/D MTA_DEBUG %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\eirshared\NativeExecutive\lib\$(Platform)_$(Configuration)_$(PlatformToolset)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nativeexec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\eirrepo\;..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\NativeExecutive\include\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4091</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/D MTA_DEBUG %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\eirshared\NativeExecutive\lib\$(Platform)_$(Configuration)_$(PlatformToolset)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nativeexec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\eirrepo\;..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\NativeExecutive\include\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4091</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\..\eirshared\NativeExecutive\lib\$(Platform)_$(Configuration)_$(PlatformToolset)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nativeexec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\eirshared\eirrepo\;..\..\..\eirshared\FileSystem\include\;..\..\..\eirshared\NativeExecutive\include\;..\..\..\eirshared\debugsdk\;..\..\..\Shared\;..\..\..\Shared\sdk\;..\..\sdk\;..\config\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4091</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\..\eirshared\NativeExecutive\lib\$(Platform)_$(Configuration)_$(PlatformToolset)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nativeexec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)..\..\output\mta"
+xcopy /Y "$(SolutionDir)..\..\MTA10\game_sa\bin\$(Platform)\$(Configuration)\$(TargetName).pdb" "$(SolutionDir)..\..\output\mta"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgheap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\eirshared\debugsdk\dbgtrace.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\C3DMarkerSA.cpp" />
+    <ClCompile Include="..\C3DMarkersSA.cpp" />
+    <ClCompile Include="..\CAERadioTrackManagerSA.cpp" />
+    <ClCompile Include="..\CAnimBlendAssocGroupSA.cpp" />
+    <ClCompile Include="..\CAnimBlendAssociationSA.cpp" />
+    <ClCompile Include="..\CAnimBlendHierarchySA.cpp" />
+    <ClCompile Include="..\CAnimBlendSequenceSA.cpp" />
+    <ClCompile Include="..\CAnimBlendStaticAssociationSA.cpp" />
+    <ClCompile Include="..\CAnimBlockSA.cpp" />
+    <ClCompile Include="..\CAnimManagerSA.cpp" />
+    <ClCompile Include="..\CAtomicModelInfoSA.cpp" />
+    <ClCompile Include="..\CAudioSA.cpp" />
+    <ClCompile Include="..\CAutomobileSA.cpp" />
+    <ClCompile Include="..\CAutomobileTrailerSA.cpp" />
+    <ClCompile Include="..\CBicycleSA.cpp" />
+    <ClCompile Include="..\CBikeSA.cpp" />
+    <ClCompile Include="..\CBoatSA.cpp" />
+    <ClCompile Include="..\CBuildingSA.cpp" />
+    <ClCompile Include="..\CCacheSA.cpp" />
+    <ClCompile Include="..\CCameraSA.cpp" />
+    <ClCompile Include="..\CCamSA.cpp" />
+    <ClCompile Include="..\CCarEnterExitSA.cpp" />
+    <ClCompile Include="..\CCarGeneratorSA.cpp" />
+    <ClCompile Include="..\CCarGroupsSA.cpp" />
+    <ClCompile Include="..\CCheckpointSA.cpp" />
+    <ClCompile Include="..\CCheckpointsSA.cpp" />
+    <ClCompile Include="..\CCivilianPedSA.cpp" />
+    <ClCompile Include="..\CClockSA.cpp" />
+    <ClCompile Include="..\CClumpModelInfoSA.cpp" />
+    <ClCompile Include="..\CColModelSA.cpp" />
+    <ClCompile Include="..\CColModelSA.loader.cpp" />
+    <ClCompile Include="..\CColPointSA.cpp" />
+    <ClCompile Include="..\CControllerConfigManagerSA.cpp" />
+    <ClCompile Include="..\CCoronasSA.cpp" />
+    <ClCompile Include="..\CDamageManagerSA.cpp" />
+    <ClCompile Include="..\CDoorSA.cpp" />
+    <ClCompile Include="..\CDummySA.cpp" />
+    <ClCompile Include="..\CEntitySA.cpp" />
+    <ClCompile Include="..\CEntitySA.render.cpp" />
+    <ClCompile Include="..\CEntitySA.rendersetup.cpp" />
+    <ClCompile Include="..\CEntitySA.renderutils.cpp" />
+    <ClCompile Include="..\CEntitySA.rmode.cpp" />
+    <ClCompile Include="..\CEntryInfoSA.cpp" />
+    <ClCompile Include="..\CEventDamageSA.cpp" />
+    <ClCompile Include="..\CEventGroupSA.cpp" />
+    <ClCompile Include="..\CEventGunShotSA.cpp" />
+    <ClCompile Include="..\CEventListSA.cpp" />
+    <ClCompile Include="..\CEventSA.cpp" />
+    <ClCompile Include="..\CExplosionManagerSA.cpp" />
+    <ClCompile Include="..\CExplosionSA.cpp" />
+    <ClCompile Include="..\CFileUtilsSA.cpp" />
+    <ClCompile Include="..\CFireManagerSA.cpp" />
+    <ClCompile Include="..\CFireSA.cpp" />
+    <ClCompile Include="..\CFontSA.cpp" />
+    <ClCompile Include="..\CFxSA.cpp" />
+    <ClCompile Include="..\CGameSA.cpp" />
+    <ClCompile Include="..\CGarageSA.cpp" />
+    <ClCompile Include="..\CGaragesSA.cpp" />
+    <ClCompile Include="..\CHandlingEntrySA.cpp" />
+    <ClCompile Include="..\CHandlingManagerSA.cpp" />
+    <ClCompile Include="..\CHeliSA.cpp" />
+    <ClCompile Include="..\CHudSA.cpp" />
+    <ClCompile Include="..\CIMGManagerSA.cpp" />
+    <ClCompile Include="..\CIPLSectorSA.cpp" />
+    <ClCompile Include="..\CKeyGenSA.cpp" />
+    <ClCompile Include="..\CMarkerSA.cpp" />
+    <ClCompile Include="..\CMenuManagerSA.cpp" />
+    <ClCompile Include="..\CModelInfoSA.base.cpp" />
+    <ClCompile Include="..\CModelInfoSA.cpp" />
+    <ClCompile Include="..\CModelInfoSA.ide.cpp" />
+    <ClCompile Include="..\CModelManagerSA.cpp" />
+    <ClCompile Include="..\CMonsterTruckSA.cpp" />
+    <ClCompile Include="..\CObjectAttributesSA.cpp" />
+    <ClCompile Include="..\CObjectSA.cpp" />
+    <ClCompile Include="..\CObjectSA.render.cpp" />
+    <ClCompile Include="..\COffsets.cpp" />
+    <ClCompile Include="..\CPadManagerSA.cpp" />
+    <ClCompile Include="..\CPadSA.cpp" />
+    <ClCompile Include="..\CParticleDataSA.cpp" />
+    <ClCompile Include="..\CParticleDataSA.info.cpp" />
+    <ClCompile Include="..\CParticleObjectSA.cpp" />
+    <ClCompile Include="..\CParticleSA.cpp" />
+    <ClCompile Include="..\CParticleSystemManagerSA.cpp" />
+    <ClCompile Include="..\CParticleSystemSA.cpp" />
+    <ClCompile Include="..\CPathFindSA.cpp" />
+    <ClCompile Include="..\CPedDamageResponseCalculatorSA.cpp" />
+    <ClCompile Include="..\CPedDamageResponseSA.cpp" />
+    <ClCompile Include="..\CPedIKSA.cpp" />
+    <ClCompile Include="..\CPedIntelligenceSA.cpp" />
+    <ClCompile Include="..\CPedModelInfoSA.cpp" />
+    <ClCompile Include="..\CPedSA.cpp" />
+    <ClCompile Include="..\CPedSoundSA.cpp" />
+    <ClCompile Include="..\CPhysicalSA.cpp" />
+    <ClCompile Include="..\CPickupSA.cpp" />
+    <ClCompile Include="..\CPickupsSA.cpp" />
+    <ClCompile Include="..\CPlaceableSA.cpp" />
+    <ClCompile Include="..\CPlaneSA.cpp" />
+    <ClCompile Include="..\CPlayerInfoSA.cpp" />
+    <ClCompile Include="..\CPlayerPedSA.cpp" />
+    <ClCompile Include="..\CPoolsSA.cpp" />
+    <ClCompile Include="..\CPopulationSA.cpp" />
+    <ClCompile Include="..\CProjectileInfoSA.cpp" />
+    <ClCompile Include="..\CProjectileSA.cpp" />
+    <ClCompile Include="..\CPtrNodeSA.cpp" />
+    <ClCompile Include="..\CQuadBikeSA.cpp" />
+    <ClCompile Include="..\CQuadTreeSA.cpp" />
+    <ClCompile Include="..\CRadarSA.cpp" />
+    <ClCompile Include="..\CRecordingsSA.cpp" />
+    <ClCompile Include="..\CRegisteredCoronaSA.cpp" />
+    <ClCompile Include="..\CRemoteSA.cpp" />
+    <ClCompile Include="..\CRenderWareExtensionSA.cpp" />
+    <ClCompile Include="..\CRenderWareSA.cpp" />
+    <ClCompile Include="..\CRenderWareSA.lighting.cpp" />
+    <ClCompile Include="..\CRenderWareSA.mem.cpp" />
+    <ClCompile Include="..\CRenderWareSA.pipeline.cpp" />
+    <ClCompile Include="..\CRenderWareSA.render.cpp" />
+    <ClCompile Include="..\CRenderWareSA.rtbucket.cpp" />
+    <ClCompile Include="..\CRenderWareSA.rtcallback.cpp" />
+    <ClCompile Include="..\CRenderWareSA.rwapi.cpp" />
+    <ClCompile Include="..\CRenderWareSA.shader.cpp" />
+    <ClCompile Include="..\CRestartSA.cpp" />
+    <ClCompile Include="..\CRopesSA.cpp" />
+    <ClCompile Include="..\CRouteSA.cpp" />
+    <ClCompile Include="..\CSettingsSA.cpp" />
+    <ClCompile Include="..\CStatsSA.cpp" />
+    <ClCompile Include="..\CStreamerSA.cpp" />
+    <ClCompile Include="..\CStreamingSA.cache.cpp" />
+    <ClCompile Include="..\CStreamingSA.clump.cpp" />
+    <ClCompile Include="..\CStreamingSA.collision.cpp" />
+    <ClCompile Include="..\CStreamingSA.cpp" />
+    <ClCompile Include="..\CStreamingSA.gc.cpp" />
+    <ClCompile Include="..\CStreamingSA.init.cpp" />
+    <ClCompile Include="..\CStreamingSA.ipl.cpp" />
+    <ClCompile Include="..\CStreamingSA.loader.cpp" />
+    <ClCompile Include="..\CStreamingSA.runtime.cpp" />
+    <ClCompile Include="..\CStreamingSA.textures.cpp" />
+    <ClCompile Include="..\CStreamingSA.utils.cpp" />
+    <ClCompile Include="..\CTaskAllocatorSA.cpp" />
+    <ClCompile Include="..\CTaskManagementSystemSA.cpp" />
+    <ClCompile Include="..\CTaskManagerSA.cpp" />
+    <ClCompile Include="..\CTasksSA.cpp" />
+    <ClCompile Include="..\CTextSA.cpp" />
+    <ClCompile Include="..\CTextureManagerSA.cpp" />
+    <ClCompile Include="..\CTextureManagerSA.instance.cpp" />
+    <ClCompile Include="..\CTheCarGeneratorsSA.cpp" />
+    <ClCompile Include="..\CTrainSA.cpp" />
+    <ClCompile Include="..\CTransformationSA.cpp" />
+    <ClCompile Include="..\CVehicleComponentSA.cpp" />
+    <ClCompile Include="..\CVehicleModelInfoSA.config.cpp" />
+    <ClCompile Include="..\CVehicleModelInfoSA.cpp" />
+    <ClCompile Include="..\CVehicleModelInfoSA.render.cpp" />
+    <ClCompile Include="..\CVehicleSA.cpp" />
+    <ClCompile Include="..\CVehicleSA.customplate.cpp" />
+    <ClCompile Include="..\CVehicleSA.render.cpp" />
+    <ClCompile Include="..\CVehicleScannerSA.cpp" />
+    <ClCompile Include="..\CVisibilityPluginsSA.cpp" />
+    <ClCompile Include="..\CWantedSA.cpp" />
+    <ClCompile Include="..\CWaterManagerSA.cpp" />
+    <ClCompile Include="..\CWaterSA.cpp" />
+    <ClCompile Include="..\CWeaponInfoSA.cpp" />
+    <ClCompile Include="..\CWeaponSA.cpp" />
+    <ClCompile Include="..\CWeatherSA.cpp" />
+    <ClCompile Include="..\CWorldSA.cpp" />
+    <ClCompile Include="..\gamesa_init.cpp" />
+    <ClCompile Include="..\HeapTrace.cpp" />
+    <ClCompile Include="..\HookSystem.cpp" />
+    <ClCompile Include="..\RenderWare\CModelSA.cpp" />
+    <ClCompile Include="..\RenderWare\CRpAtomicSA.cpp" />
+    <ClCompile Include="..\RenderWare\CRpLightSA.cpp" />
+    <ClCompile Include="..\RenderWare\CRwCameraSA.cpp" />
+    <ClCompile Include="..\RenderWare\CRwFrameSA.cpp" />
+    <ClCompile Include="..\RenderWare\CRwObjectSA.cpp" />
+    <ClCompile Include="..\RenderWare\CTexDictionarySA.cpp" />
+    <ClCompile Include="..\RenderWare\CTextureSA.cpp" />
+    <ClCompile Include="..\RenderWare\RpAtomic.cpp" />
+    <ClCompile Include="..\RenderWare\RpAtomicD3D9.cpp" />
+    <ClCompile Include="..\RenderWare\RpClump.cpp" />
+    <ClCompile Include="..\RenderWare\RpGeometry.cpp" />
+    <ClCompile Include="..\RenderWare\RpGeometryStreamline.cpp" />
+    <ClCompile Include="..\RenderWare\RpLight.cpp" />
+    <ClCompile Include="..\RenderWare\RpMaterial.cpp" />
+    <ClCompile Include="..\RenderWare\RwCamera.cpp" />
+    <ClCompile Include="..\RenderWare\RwFrame.cpp" />
+    <ClCompile Include="..\RenderWare\RwMath.cpp" />
+    <ClCompile Include="..\RenderWare\RwRenderStates.cpp" />
+    <ClCompile Include="..\RenderWare\RwStream.cpp" />
+    <ClCompile Include="..\RenderWare\RwTexDictionary.cpp" />
+    <ClCompile Include="..\RenderWare\RwTexture.cpp" />
+    <ClCompile Include="..\RenderWare\RwTextureD3D9.cpp" />
+    <ClCompile Include="..\RenderWare\RwUtilsD3D9.cpp" />
+    <ClCompile Include="..\StdInc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\TaskAttackSA.cpp" />
+    <ClCompile Include="..\TaskBasicSA.cpp" />
+    <ClCompile Include="..\TaskCarAccessoriesSA.cpp" />
+    <ClCompile Include="..\TaskCarSA.cpp" />
+    <ClCompile Include="..\TaskGoToSA.cpp" />
+    <ClCompile Include="..\TaskIKSA.cpp" />
+    <ClCompile Include="..\TaskJumpFallSA.cpp" />
+    <ClCompile Include="..\TaskNamesSA.cpp" />
+    <ClCompile Include="..\TaskPhysicalResponseSA.cpp" />
+    <ClCompile Include="..\TaskSA.cpp" />
+    <ClCompile Include="..\TaskSecondarySA.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgheap.h" />
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.h" />
+    <ClInclude Include="..\..\..\eirshared\debugsdk\dbgtrace.vendor.hwbrk.hxx" />
+    <ClInclude Include="..\C3DMarkerSA.h" />
+    <ClInclude Include="..\C3DMarkersSA.h" />
+    <ClInclude Include="..\CAERadioTrackManagerSA.h" />
+    <ClInclude Include="..\CAnimBlendAssocGroupSA.h" />
+    <ClInclude Include="..\CAnimBlendAssociationSA.h" />
+    <ClInclude Include="..\CAnimBlendHierarchySA.h" />
+    <ClInclude Include="..\CAnimBlendSequenceSA.h" />
+    <ClInclude Include="..\CAnimBlendStaticAssociationSA.h" />
+    <ClInclude Include="..\CAnimBlockSA.h" />
+    <ClInclude Include="..\CAnimManagerSA.h" />
+    <ClInclude Include="..\CAtomicModelInfoSA.h" />
+    <ClInclude Include="..\CAudioSA.h" />
+    <ClInclude Include="..\CAutomobileSA.h" />
+    <ClInclude Include="..\CAutomobileTrailerSA.h" />
+    <ClInclude Include="..\CBicycleSA.h" />
+    <ClInclude Include="..\CBikeSA.h" />
+    <ClInclude Include="..\CBoatSA.h" />
+    <ClInclude Include="..\CBuildingSA.h" />
+    <ClInclude Include="..\CCacheSA.h" />
+    <ClInclude Include="..\CCameraSA.h" />
+    <ClInclude Include="..\CCamSA.h" />
+    <ClInclude Include="..\CCarEnterExitSA.h" />
+    <ClInclude Include="..\CCarGeneratorSA.h" />
+    <ClInclude Include="..\CCarGroupsSA.h" />
+    <ClInclude Include="..\CCheckpointSA.h" />
+    <ClInclude Include="..\CCheckpointsSA.h" />
+    <ClInclude Include="..\CCivilianPedSA.h" />
+    <ClInclude Include="..\CClockSA.h" />
+    <ClInclude Include="..\CClumpModelInfoSA.h" />
+    <ClInclude Include="..\CColModelSA.h" />
+    <ClInclude Include="..\CColModelSA.loader.h" />
+    <ClInclude Include="..\CColPointSA.h" />
+    <ClInclude Include="..\CControllerConfigManagerSA.h" />
+    <ClInclude Include="..\CCoronasSA.h" />
+    <ClInclude Include="..\CDamageManagerSA.h" />
+    <ClInclude Include="..\CDoorSA.h" />
+    <ClInclude Include="..\CDummySA.h" />
+    <ClInclude Include="..\CEntitySA.h" />
+    <ClInclude Include="..\CEntitySA.render.h" />
+    <ClInclude Include="..\CEntitySA.render.hxx" />
+    <ClInclude Include="..\CEntitySA.rendersetup.h" />
+    <ClInclude Include="..\CEntitySA.renderutils.h" />
+    <ClInclude Include="..\CEntitySA.rmode.h" />
+    <ClInclude Include="..\CEntryInfoSA.h" />
+    <ClInclude Include="..\CEventDamageSA.h" />
+    <ClInclude Include="..\CEventGroupSA.h" />
+    <ClInclude Include="..\CEventGunShotSA.h" />
+    <ClInclude Include="..\CEventListSA.h" />
+    <ClInclude Include="..\CEventSA.h" />
+    <ClInclude Include="..\CExplosionManagerSA.h" />
+    <ClInclude Include="..\CExplosionSA.h" />
+    <ClInclude Include="..\CFileUtilsSA.h" />
+    <ClInclude Include="..\CFireManagerSA.h" />
+    <ClInclude Include="..\CFireSA.h" />
+    <ClInclude Include="..\CFontSA.h" />
+    <ClInclude Include="..\CFxSA.h" />
+    <ClInclude Include="..\CGameSA.h" />
+    <ClInclude Include="..\CGarageSA.h" />
+    <ClInclude Include="..\CGaragesSA.h" />
+    <ClInclude Include="..\CHandlingEntrySA.h" />
+    <ClInclude Include="..\CHandlingManagerSA.h" />
+    <ClInclude Include="..\CHeliSA.h" />
+    <ClInclude Include="..\CHudSA.h" />
+    <ClInclude Include="..\CIMGManagerSA.h" />
+    <ClInclude Include="..\CIPLSectorSA.h" />
+    <ClInclude Include="..\CKeyGenSA.h" />
+    <ClInclude Include="..\CMarkerSA.h" />
+    <ClInclude Include="..\CMemoryUtilsSA.h" />
+    <ClInclude Include="..\CMenuManagerSA.h" />
+    <ClInclude Include="..\CModelInfoSA.base.h" />
+    <ClInclude Include="..\CModelInfoSA.h" />
+    <ClInclude Include="..\CModelInfoSA.ide.h" />
+    <ClInclude Include="..\CModelManagerSA.h" />
+    <ClInclude Include="..\CMonsterTruckSA.h" />
+    <ClInclude Include="..\CObjectAttributesSA.h" />
+    <ClInclude Include="..\CObjectSA.h" />
+    <ClInclude Include="..\CObjectSA.render.h" />
+    <ClInclude Include="..\COffsets.h" />
+    <ClInclude Include="..\Common.h" />
+    <ClInclude Include="..\config\debugsdk_config.h" />
+    <ClInclude Include="..\CPadManagerSA.h" />
+    <ClInclude Include="..\CPadSA.h" />
+    <ClInclude Include="..\CParticleDataSA.h" />
+    <ClInclude Include="..\CParticleDataSA.info.h" />
+    <ClInclude Include="..\CParticleObjectSA.h" />
+    <ClInclude Include="..\CParticleSA.h" />
+    <ClInclude Include="..\CParticleSystemManagerSA.h" />
+    <ClInclude Include="..\CParticleSystemSA.h" />
+    <ClInclude Include="..\CPathFindSA.h" />
+    <ClInclude Include="..\CPedDamageResponseCalculatorSA.h" />
+    <ClInclude Include="..\CPedDamageResponseSA.h" />
+    <ClInclude Include="..\CPedIKSA.h" />
+    <ClInclude Include="..\CPedIntelligenceSA.h" />
+    <ClInclude Include="..\CPedModelInfoSA.h" />
+    <ClInclude Include="..\CPedSA.h" />
+    <ClInclude Include="..\CPedSoundSA.h" />
+    <ClInclude Include="..\CPhysicalSA.h" />
+    <ClInclude Include="..\CPickupSA.h" />
+    <ClInclude Include="..\CPickupsSA.h" />
+    <ClInclude Include="..\CPlaceableSA.h" />
+    <ClInclude Include="..\CPlaneSA.h" />
+    <ClInclude Include="..\CPlayerInfoSA.h" />
+    <ClInclude Include="..\CPlayerPedSA.h" />
+    <ClInclude Include="..\CPoolsSA.h" />
+    <ClInclude Include="..\CPopulationSA.h" />
+    <ClInclude Include="..\CProjectileInfoSA.h" />
+    <ClInclude Include="..\CProjectileSA.h" />
+    <ClInclude Include="..\CPtrNodeSA.h" />
+    <ClInclude Include="..\CQuadBikeSA.h" />
+    <ClInclude Include="..\CQuadTreeSA.h" />
+    <ClInclude Include="..\CRadarSA.h" />
+    <ClInclude Include="..\CRecordingsSA.h" />
+    <ClInclude Include="..\CRegisteredCoronaSA.h" />
+    <ClInclude Include="..\CRemoteSA.h" />
+    <ClInclude Include="..\CRenderWareExtensionSA.h" />
+    <ClInclude Include="..\CRenderWareSA.h" />
+    <ClInclude Include="..\CRenderWareSA.lighting.h" />
+    <ClInclude Include="..\CRenderWareSA.mem.h" />
+    <ClInclude Include="..\CRenderWareSA.pipeline.h" />
+    <ClInclude Include="..\CRenderWareSA.render.h" />
+    <ClInclude Include="..\CRenderWareSA.rmode.hxx" />
+    <ClInclude Include="..\CRenderWareSA.rtbucket.h" />
+    <ClInclude Include="..\CRenderWareSA.rtbucket.hxx" />
+    <ClInclude Include="..\CRenderWareSA.rtcallback.h" />
+    <ClInclude Include="..\CRenderWareSA.rwapi.h" />
+    <ClInclude Include="..\CRenderWareSA.shader.h" />
+    <ClInclude Include="..\CRenderWareSA.state.lighting.hxx" />
+    <ClInclude Include="..\CRenderWareSA.state.rs.hxx" />
+    <ClInclude Include="..\CRenderWareSA.state.sampler.hxx" />
+    <ClInclude Include="..\CRenderWareSA.state.stream.hxx" />
+    <ClInclude Include="..\CRenderWareSA.state.transf.hxx" />
+    <ClInclude Include="..\CRenderWareSA.state.tss.hxx" />
+    <ClInclude Include="..\CRenderWareSA.stateman.hxx" />
+    <ClInclude Include="..\CRestartSA.h" />
+    <ClInclude Include="..\CRopesSA.h" />
+    <ClInclude Include="..\CRouteSA.h" />
+    <ClInclude Include="..\CSettingsSA.h" />
+    <ClInclude Include="..\CStatsSA.h" />
+    <ClInclude Include="..\CStreamerSA.h" />
+    <ClInclude Include="..\CStreamingSA.cache.h" />
+    <ClInclude Include="..\CStreamingSA.clump.h" />
+    <ClInclude Include="..\CStreamingSA.collision.h" />
+    <ClInclude Include="..\CStreamingSA.gc.h" />
+    <ClInclude Include="..\CStreamingSA.h" />
+    <ClInclude Include="..\CStreamingSA.init.h" />
+    <ClInclude Include="..\CStreamingSA.ipl.h" />
+    <ClInclude Include="..\CStreamingSA.loader.h" />
+    <ClInclude Include="..\CStreamingSA.runtime.h" />
+    <ClInclude Include="..\CStreamingSA.sectorize.h" />
+    <ClInclude Include="..\CStreamingSA.textures.h" />
+    <ClInclude Include="..\CStreamingSA.utils.h" />
+    <ClInclude Include="..\CStreamingSA.utils.hxx" />
+    <ClInclude Include="..\CTaskAllocatorSA.h" />
+    <ClInclude Include="..\CTaskManagementSystemSA.h" />
+    <ClInclude Include="..\CTaskManagerSA.h" />
+    <ClInclude Include="..\CTasksSA.h" />
+    <ClInclude Include="..\CTextSA.h" />
+    <ClInclude Include="..\CTextureManagerSA.h" />
+    <ClInclude Include="..\CTextureManagerSA.instance.h" />
+    <ClInclude Include="..\CTheCarGeneratorsSA.h" />
+    <ClInclude Include="..\CThreadingUtilsSA.h" />
+    <ClInclude Include="..\CTrainSA.h" />
+    <ClInclude Include="..\CTransformationSA.h" />
+    <ClInclude Include="..\CVehicleComponentSA.h" />
+    <ClInclude Include="..\CVehicleModelInfoSA.config.h" />
+    <ClInclude Include="..\CVehicleModelInfoSA.h" />
+    <ClInclude Include="..\CVehicleModelInfoSA.render.h" />
+    <ClInclude Include="..\CVehicleSA.customplate.h" />
+    <ClInclude Include="..\CVehicleSA.h" />
+    <ClInclude Include="..\CVehicleSA.render.h" />
+    <ClInclude Include="..\CVehicleScannerSA.h" />
+    <ClInclude Include="..\CVisibilityPluginsSA.h" />
+    <ClInclude Include="..\CWantedSA.h" />
+    <ClInclude Include="..\CWaterManagerSA.h" />
+    <ClInclude Include="..\CWaterSA.h" />
+    <ClInclude Include="..\CWeaponInfoSA.h" />
+    <ClInclude Include="..\CWeaponSA.h" />
+    <ClInclude Include="..\CWeatherSA.h" />
+    <ClInclude Include="..\CWorldSA.h" />
+    <ClInclude Include="..\gamesa_init.h" />
+    <ClInclude Include="..\gamesa_renderware.h" />
+    <ClInclude Include="..\HeapTrace.h" />
+    <ClInclude Include="..\HookSystem.h" />
+    <ClInclude Include="..\RenderWare.h" />
+    <ClInclude Include="..\RenderWare\CModelSA.h" />
+    <ClInclude Include="..\RenderWare\CRpAtomicSA.h" />
+    <ClInclude Include="..\RenderWare\CRpLightSA.h" />
+    <ClInclude Include="..\RenderWare\CRwCameraSA.h" />
+    <ClInclude Include="..\RenderWare\CRwFrameSA.h" />
+    <ClInclude Include="..\RenderWare\CRwObjectSA.h" />
+    <ClInclude Include="..\RenderWare\CTexDictionarySA.h" />
+    <ClInclude Include="..\RenderWare\CTextureSA.h" />
+    <ClInclude Include="..\RenderWare\include.h" />
+    <ClInclude Include="..\RenderWare\RpAtomic.h" />
+    <ClInclude Include="..\RenderWare\RpAtomicD3D9.h" />
+    <ClInclude Include="..\RenderWare\RpClump.h" />
+    <ClInclude Include="..\RenderWare\RpGeometry.h" />
+    <ClInclude Include="..\RenderWare\RpGeometryStreamline.h" />
+    <ClInclude Include="..\RenderWare\RpLight.h" />
+    <ClInclude Include="..\RenderWare\RpMaterial.h" />
+    <ClInclude Include="..\RenderWare\RwCamera.h" />
+    <ClInclude Include="..\RenderWare\RwFrame.h" />
+    <ClInclude Include="..\RenderWare\RwInternals.h" />
+    <ClInclude Include="..\RenderWare\RwMath.h" />
+    <ClInclude Include="..\RenderWare\RwRenderStates.h" />
+    <ClInclude Include="..\RenderWare\RwRenderTools.hxx" />
+    <ClInclude Include="..\RenderWare\RwStream.h" />
+    <ClInclude Include="..\RenderWare\RwTexDictionary.h" />
+    <ClInclude Include="..\RenderWare\RwTexture.h" />
+    <ClInclude Include="..\RenderWare\RwTextureD3D9.h" />
+    <ClInclude Include="..\RenderWare\RwUtilsD3D9.h" />
+    <ClInclude Include="..\StdInc.h" />
+    <ClInclude Include="..\TaskAttackSA.h" />
+    <ClInclude Include="..\TaskBasicSA.h" />
+    <ClInclude Include="..\TaskCarAccessoriesSA.h" />
+    <ClInclude Include="..\TaskCarSA.h" />
+    <ClInclude Include="..\TaskGoToSA.h" />
+    <ClInclude Include="..\TaskIKSA.h" />
+    <ClInclude Include="..\TaskJumpFallSA.h" />
+    <ClInclude Include="..\TaskNamesSA.h" />
+    <ClInclude Include="..\TaskPhysicalResponseSA.h" />
+    <ClInclude Include="..\TaskSA.h" />
+    <ClInclude Include="..\TaskSecondarySA.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

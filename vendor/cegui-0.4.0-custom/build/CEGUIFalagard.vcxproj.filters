@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalCheckbox.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalCombobox.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalComboDropList.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalEditbox.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalFrameWindow.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalListbox.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalListHeader.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalListHeaderProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalListHeaderSegment.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalListHeaderSegmentProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalMenuBar.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalMenuItem.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalModule.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalMultiColumnList.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalMultiLineEditbox.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalMultiLineEditboxProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalPopupMenu.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalProgressBar.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalProgressBarProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalRadioButton.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalScrollablePane.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalScrollbar.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalScrollbarProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalSlider.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalSliderProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalSpinner.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalStaticImage.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalStaticText.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalSystemButton.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalTabButton.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalTabControl.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalTabControlProperties.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalTabPane.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalThumb.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalTitlebar.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalTooltip.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\StdInc.cpp" />
+    <ClCompile Include="..\WidgetSets\Falagard\src\FalButton.cpp" />
+  </ItemGroup>
+</Project>

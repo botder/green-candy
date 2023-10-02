@@ -1,0 +1,1454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{eadcfc49-0057-4b65-9cb8-89d54c7226f5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\logic">
+      <UniqueIdentifier>{3d8aed73-209e-4244-a960-38656985bb79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\logic\packets">
+      <UniqueIdentifier>{60790570-7728-4fc3-88a2-e224622bb1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\logic\lua">
+      <UniqueIdentifier>{e4f34cf0-cf24-4b10-a4aa-8777f4536db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\logic\luadefs">
+      <UniqueIdentifier>{1703237a-448c-4908-8af8-593d077195e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{d9db2b1e-3eaf-414a-bcfd-70f6a3c6e124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\zip">
+      <UniqueIdentifier>{33be39cf-7fc8-49b6-85b2-e386b80b81e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared">
+      <UniqueIdentifier>{c4847e51-aed8-42db-b96a-d340101bd6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{dbf6fc6d-7599-4e84-a42b-5158f21c4fe0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\logic">
+      <UniqueIdentifier>{e9541b73-2774-4e5f-b2cb-d849b538e281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\logic\packets">
+      <UniqueIdentifier>{c0dc9737-230e-40bc-90ef-bf5caf939a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\logic\lua">
+      <UniqueIdentifier>{c2b71507-0021-407e-8409-7e6e36dca404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\logic\common">
+      <UniqueIdentifier>{53d7b9ae-e106-4bfc-b69d-de43be9d65cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\logic\luadefs">
+      <UniqueIdentifier>{b82e56c4-7692-4737-8e40-9c44bd22a970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{96abcf39-fc12-4ec6-abbe-909a00f47580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\zip">
+      <UniqueIdentifier>{34f82d01-af49-4e95-8d2b-533028a18b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shared">
+      <UniqueIdentifier>{5eaa351f-28f7-44db-9b51-61e896cce2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9d39eeb7-f591-4680-b170-fbe657dcb57c}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\output">
+      <UniqueIdentifier>{af2dd39b-6589-4e74-a053-45268a341b2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdk\MTAPlatform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdInc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\ASE.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CAccessControlList.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CAccessControlListGroup.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CAccessControlListManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CAccessControlListRight.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CAccount.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CAccountManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CBan.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CBanManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CBlendedWeather.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CBlip.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CBlipManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CClient.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CClock.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColCircle.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColCuboid.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColPolygon.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColRectangle.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColShape.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColSphere.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CColTube.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CCommandFile.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CCommandLineParser.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CConnectHistory.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CConsole.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CConsoleClient.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CConsoleCommand.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CConsoleCommands.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CCustomData.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CDummy.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CDynamicLibrary.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CElement.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CElementDeleter.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CElementGroup.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CElementIDs.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CElementRefManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CEvents.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CGame.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CGroups.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CHandlingEntry.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CHandlingManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CHTTPD.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CKeyBinds.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CLanBroadcast.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CLogger.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CMainConfig.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CMapEvent.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CMapEventManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CMapManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CMarker.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CMarkerManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CObject.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CObjectManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CObjectSync.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPacketTranslator.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPad.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPed.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPedManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPedSync.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.BandwidthReduction.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.BandwidthUsage.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.LibMemory.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.LuaMemory.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.LuaTiming.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.PacketUsage.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStat.SqliteTiming.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerfStatManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPerPlayerEntity.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPickup.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPickupManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPlayer.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPlayerCamera.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPlayerClothes.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPlayerManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPlayerTasks.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CPlayerTextManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRadarArea.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRadarAreaManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRegisteredCommands.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRegistry.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRegistryManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRemoteCalls.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResource.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceChecker.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceClientConfigItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceClientFileItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceClientScriptItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceConfigItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceDownloader.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceFile.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceHTMLItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceMapItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CResourceScriptItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CRPCFunctions.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CScriptDebugging.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CScriptFile.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CSerialManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CSettings.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CSpatialDatabase.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CStaticFunctionDefinitions.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CTeam.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CTeamManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CTextDisplay.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CTextItem.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CUnoccupiedVehicleSync.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CVehicle.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CVehicleColorManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CVehicleDefaultColors.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CVehicleManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CVehicleNames.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CVehicleUpgrades.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CWater.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CWaterManager.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CWeaponNames.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CWhoWas.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CXMLConfig.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\CZoneNames.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\TaskNames.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\Utils.cpp">
+      <Filter>Source Files\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CCameraSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CChatEchoPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CCommandPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CConsoleEchoPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CCustomDataPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CDebugEchoPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CDetonateSatchelsPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CElementRPCPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CEntityAddPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CEntityRemovePacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CExplosionSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CFireSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CKeysyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CLuaEventPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CLuaPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CMapInfoPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CObjectStartSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CObjectSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPedStartSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPedSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPedWastedPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPickupHideShowPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPickupHitConfirmPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerChangeNickPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerClothesPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerConnectCompletePacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerDiagnosticPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerDisconnectedPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerJoinCompletePacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerJoinDataPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerJoinPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerListPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerModInfoPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerPuresyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerQuitPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerSpawnPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerStatsPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerTimeoutPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerTransgressionPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CPlayerWastedPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CProjectileSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CResourceStartPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CResourceStopPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CReturnSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CServerTextItemPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CUnoccupiedVehicleStartSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CUnoccupiedVehicleSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CUpdateInfoPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVehicleDamageSyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVehicleInOutPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVehiclePuresyncPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVehicleSpawnPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVehicleTrailerPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVoiceDataPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\CVoiceEndPacket.cpp">
+      <Filter>Source Files\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaArgument.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaArguments.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaCFunctions.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaFunctionDefinitions.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaFunctionParseHelpers.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaFunctionRef.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaMain.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaManager.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaModuleManager.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaTimer.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\CLuaTimerManager.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\lua\LuaCommon.cpp">
+      <Filter>Source Files\logic\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaACLDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaCameraDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaElementDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaFileDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaHandlingDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaHTTPDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaPickupDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaResourceDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaTextDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaVoiceDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaWorldDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\luadefs\CLuaXMLDefs.cpp">
+      <Filter>Source Files\logic\luadefs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\bob_withers\base64.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CHTTPRequest.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CHTTPResponse.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\bochs\bochs_internal\crc32.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CTCPClientSocketImpl.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\CTCPImpl.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\zip\ioapi.c">
+      <Filter>Source Files\utils\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\zip\iowin32.c">
+      <Filter>Source Files\utils\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\zip\mztools.c">
+      <Filter>Source Files\utils\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\zip\unzip.c">
+      <Filter>Source Files\utils\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\vendor\zip\zip.c">
+      <Filter>Source Files\utils\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shared\animation\CEasingCurve.cpp">
+      <Filter>Source Files\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shared\animation\CPositionRotationAnimation.cpp">
+      <Filter>Source Files\shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\zip\crypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EXECryptor\EXECryptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\ASE.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CAccessControlList.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CAccessControlListGroup.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CAccessControlListManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CAccessControlListRight.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CAccount.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CAccountManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CBan.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CBandwidthSettings.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CBanManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CBlendedWeather.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CBlip.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CBlipManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CClient.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CClock.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColCallback.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColCircle.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColCuboid.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColPolygon.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColRectangle.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColShape.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColSphere.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CColTube.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CCommandFile.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CCommandLineParser.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CCommon.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CConnectHistory.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CConsole.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CConsoleClient.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CConsoleCommand.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CConsoleCommands.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CCustomData.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CDummy.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CDynamicLibrary.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CElement.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CElementDeleter.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CElementGroup.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CElementIDs.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CElementRefManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CEvents.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CGame.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CGroups.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CHandlingEntry.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CHandlingManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CHTTPD.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CKeyBinds.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CLanBroadcast.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CLogger.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CMainConfig.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CMapEvent.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CMapEventManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CMapManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CMarker.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CMarkerManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CObject.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CObjectManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CObjectStreamItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CObjectSync.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPacketTranslator.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPad.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPed.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPedManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPedSync.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPerfStatManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPerfStatModule.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPerPlayerEntity.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPickup.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPickupManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPlayer.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPlayerCamera.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPlayerClothes.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPlayerManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPlayerTasks.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CPlayerTextManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRadarArea.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRadarAreaManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRegisteredCommands.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRegistry.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRegistryManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRemoteCalls.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResource.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceChecker.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceClientConfigItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceClientFileItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceConfigItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceDownloader.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceFile.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceHTMLItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceMapItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CResourceScriptItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CRPCFunctions.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CScriptDebugging.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CScriptFile.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CSerialManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CSettings.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CSpatialDatabase.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CSpawnpoint.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CSpawnpoints.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CStaticFunctionDefinitions.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CTeam.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CTeamManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CTextDisplay.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CTextItem.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CUnoccupiedVehicleSync.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CVehicle.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CVehicleColorManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CVehicleDefaultColors.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CVehicleManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CVehicleNames.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CVehicleUpgrades.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CWater.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CWaterManager.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CWeaponNames.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CWhoWas.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CXMLConfig.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\CZoneNames.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\Element.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\sdk\net\SyncStructures.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\TaskNames.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\Utils.h">
+      <Filter>Header Files\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CCameraSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CChatEchoPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CCommandPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CConsoleEchoPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CCustomDataPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CDebugEchoPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CDetonateSatchelsPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CElementRPCPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CEntityAddPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CEntityRemovePacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CExplosionSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CFireSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CKeysyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CLuaEventPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CLuaPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CMapInfoPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CObjectStartSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CObjectStopSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CObjectSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPedStartSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPedStopSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPedSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPedWastedPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPhysicsSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPickupHideShowPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPickupHitConfirmPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerChangeNickPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerClothesPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerConnectCompletePacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerDiagnosticPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerDisconnectedPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerJoinCompletePacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerJoinDataPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerJoinPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerListPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerModInfoPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerPuresyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerQuitPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerSpawnPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerStatsPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerTimeoutPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerTransgressionPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CPlayerWastedPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CProjectileSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CResourceStartPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CResourceStopPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CReturnSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CServerTextItemPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CUnoccupiedVehicleStartSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CUnoccupiedVehicleStopSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CUnoccupiedVehicleSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CUpdateInfoPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVehicleDamageSyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVehicleInOutPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVehiclePuresyncPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVehicleSpawnPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVehicleTrailerPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVoiceDataPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\CVoiceEndPacket.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\PacketIODeclarators.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\sdk\net\Packets.h">
+      <Filter>Header Files\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaArgument.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaArguments.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaCFunctions.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaFunctionDefinitions.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaFunctionParseHelpers.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaFunctionRef.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaMain.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaManager.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaModuleManager.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaTimer.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\CLuaTimerManager.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\sdk\net\rpc_enums.h">
+      <Filter>Header Files\logic\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\CBitStream.h">
+      <Filter>Header Files\logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaACLDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaCameraDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaElementDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaFileDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaHandlingDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaHTTPDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaPickupDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaResourceDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaTextDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaVoiceDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaWorldDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\luadefs\CLuaXMLDefs.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\lua\LuaCommon.h">
+      <Filter>Header Files\logic\luadefs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\bob_withers\base64.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\CHTTPResponse.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\COpenPortsTester.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\bochs\bochs_internal\crc32.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\sdk\ieee754.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\zip\ioapi.h">
+      <Filter>Header Files\utils\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\zip\iowin32.h">
+      <Filter>Header Files\utils\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\zip\mztools.h">
+      <Filter>Header Files\utils\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\zip\unzip.h">
+      <Filter>Header Files\utils\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\vendor\zip\zip.h">
+      <Filter>Header Files\utils\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\animation\CEasingCurve.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\animation\CPositionRotationAnimation.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shared\animation\TInterpolation.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="acl.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="banlist.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="editor.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="editor_acl.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="local.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Makefile.am">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mtaserver.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vehiclecolors.conf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\output\LICENSE">
+      <Filter>Resource Files\output</Filter>
+    </None>
+    <None Include="..\..\output\NOTICE">
+      <Filter>Resource Files\output</Filter>
+    </None>
+    <None Include="..\..\output\README">
+      <Filter>Resource Files\output</Filter>
+    </None>
+  </ItemGroup>
+</Project>
